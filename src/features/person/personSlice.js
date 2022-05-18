@@ -1,34 +1,40 @@
 import { createSlice } from '@reduxjs/toolkit'
 
-export const counterSlice = createSlice({
+export const personSlice = createSlice({
   name: 'person',
-  initialState: {
+  initialState: [{
     name: 'Bob Boberson',
     ocupation: 'coder',
     location: 'USA',
     metAt: 'React convention',
     company: '100Devs',
-  },
+    isEditable: false,
+    temp: {},
+  }],
   reducers: {
-    changeName: (state, action) => {
-      state.name = action.payload
+    changeTemp: (state, action) => {
+        state[action.payload[1]].temp[action.payload[0]] = action.payload[2]
+
+        console.log(action.payload)
     },
-    changeOcupation: (state, action) => {
-      state.ocupation = action.payload
+    changeState: (state, action) => {
+      state[action.payload] = {
+        name: state[action.payload].temp.name ? state[action.payload].temp.name : state[action.payload].name, 
+        ocupation: state[action.payload].temp.ocupation ? state[action.payload].temp.ocupation : state[action.payload].ocupation,  
+        location: state[action.payload].temp.location ? state[action.payload].temp.location : state[action.payload].location, 
+        metAt: state[action.payload].temp.metAt ? state[action.payload].temp.metAt : state[action.payload].metAt,  
+        company: state[action.payload].temp.company ? state[action.payload].temp.company : state[action.payload].company, 
+        isEditable: false,
+        temp: {}
+    }
     },
-    changeLocation: (state, action) => {
-      state.location = action.payload
-    },
-    changeMetAt: (state, action) => {
-        state.metAt = action.payload
-    }, 
-    changeCompany: (state, action) => {
-        state.company = action.payload
+    changeIsEditable: (state, action) => {
+        state[action.payload].isEditable = !state[action.payload].isEditable 
     }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { changeState, changeIsEditable, changeTemp } = personSlice.actions
 
-export default counterSlice.reducer
+export default personSlice.reducer
