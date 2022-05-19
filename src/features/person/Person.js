@@ -2,6 +2,11 @@ import React from 'react'
 import '../../Person.css'
 import { useSelector, useDispatch } from 'react-redux'
 import { changeState, changeIsEditable, changeTemp, deletePerson } from './personSlice'
+import { Chat } from '../chat/Chat'
+import img1 from '../../images/icons8-edit-96.png'
+import img2 from '../../images/icons8-remove-96.png'
+
+
 
 export function Person() {
     const person = useSelector(state => state.person)
@@ -18,6 +23,7 @@ export function Person() {
         element.isEditable ?
         (
             <div key={`edit-person${index}`} className='person-container'>
+                {/* add value attribute to make it controlled input */}
                 <input placeholder={element.name}   className={index} name='name' onChange={handleChange}></input> 
                 <input placeholder={element.ocupation}   className={index} name='ocupation' onChange={handleChange}></input>
                 <input placeholder={element.location}   className={index} name='location' onChange={handleChange}></input>
@@ -29,16 +35,17 @@ export function Person() {
         ) :
         (
         <div key={`person${index}`} id={`person${index}`} className='person-container'>
-            <button onClick={() => dispatch(changeIsEditable(index))}>Edit</button>
-            <button onClick={() => dispatch(deletePerson(index))}>Delete person</button> 
+            <div className='modify-person-container'>
+                <button onClick={() => dispatch(changeIsEditable(index))}><img alt='edit person' className='modify-person-icon' src={img1} /></button>
+                <button onClick={() => dispatch(deletePerson(index))}><img alt='delete person' className='modify-person-icon' src={img2} /></button> 
+            </div>
             <h1>{element.name}</h1>
             <p>Ocupation: {element.ocupation}</p>
             <p>Location: {element.location}</p>
             <p>Met at: {element.metAt}</p>
             <p>Company: {element.company}</p>
             <p>Chats:</p>
-            <textarea></textarea>
-            <button>Add a chat</button>
+            <Chat index={index}/>
         </div>
         )
     ))

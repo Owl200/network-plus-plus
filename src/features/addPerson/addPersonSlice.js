@@ -9,7 +9,7 @@ export const addPersonSlice = createSlice({
     metAt: '',
     company: '',
     isEditable: false,
-    temp: '',
+    temp: {},
   },
   reducers: {
     toggleAdd: (state) => {state.isEditable = !state.isEditable},

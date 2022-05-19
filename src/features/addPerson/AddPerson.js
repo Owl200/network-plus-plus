@@ -32,9 +32,9 @@ export function AddPerson() {
             default:
                 break;
       }
-      dispatch()
     }
 
+    /// need to change it to extra reducers
     const handleSave = _ => {
         dispatch(toggleAdd())
         dispatch(addToArray(addPerson))

@@ -4,8 +4,18 @@
     padding: 1.5rem;
     font-size: 14px;
     display: grid;
-    width: 40%;
+    width: 90%;
     max-width: 600px;
     margin: 1rem;
+}
+
+.modify-person-icon {
+    height: 3vh;
+}
+
+.modify-person-container {
+    display: flex;
+    justify-content: end;
+    column-gap: 0.5rem;
 }
 

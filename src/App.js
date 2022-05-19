@@ -9,6 +9,9 @@ function App() {
         <AddPerson />
         <Person />
       </header>
+      <footer>
+        <p><a target="_blank" href="https://icons8.com/icon/56304/" rel="noreferrer"> icons </a> by <a target="_blank" rel="noreferrer" href="https://icons8.com">Icons8</a></p>
+      </footer>
     </div>
   );
 }
