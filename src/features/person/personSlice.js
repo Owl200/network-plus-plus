@@ -14,8 +14,6 @@ export const personSlice = createSlice({
   reducers: {
     changeTemp: (state, action) => {
         state[action.payload[1]].temp[action.payload[0]] = action.payload[2]
-
-        console.log(action.payload)
     },
     changeState: (state, action) => {
       state[action.payload] = {
@@ -28,13 +26,19 @@ export const personSlice = createSlice({
         temp: {}
     }
     },
+    addToArray: (state, action) => {
+        state.push(action.payload)
+    },
     changeIsEditable: (state, action) => {
         state[action.payload].isEditable = !state[action.payload].isEditable 
+    },
+    deletePerson: (state, action) =>{
+        state.splice(action.payload, 1)
     }
   }
 })
 
 // Action creators are generated for each case reducer function
-export const { changeState, changeIsEditable, changeTemp } = personSlice.actions
+export const { changeState, changeIsEditable, addToArray, changeTemp, deletePerson } = personSlice.actions
 
 export default personSlice.reducer
