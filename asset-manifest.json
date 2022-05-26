@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/network-plus-plus/static/css/main.a6e7a09f.css",
-    "main.js": "/network-plus-plus/static/js/main.df50051c.js",
+    "main.js": "/network-plus-plus/static/js/main.7a863bd7.js",
     "index.html": "/network-plus-plus/index.html",
     "main.a6e7a09f.css.map": "/network-plus-plus/static/css/main.a6e7a09f.css.map",
-    "main.df50051c.js.map": "/network-plus-plus/static/js/main.df50051c.js.map"
+    "main.7a863bd7.js.map": "/network-plus-plus/static/js/main.7a863bd7.js.map"
   },
   "entrypoints": [
     "static/css/main.a6e7a09f.css",
-    "static/js/main.df50051c.js"
+    "static/js/main.7a863bd7.js"
   ]
 }
