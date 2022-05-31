@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/network-plus-plus/static/css/main.be8cda20.css",
-    "main.js": "/network-plus-plus/static/js/main.ec62479e.js",
+    "main.css": "/network-plus-plus/static/css/main.ad19616d.css",
+    "main.js": "/network-plus-plus/static/js/main.00518861.js",
+    "static/media/ash-edmonds-XZ0xN0hmpi4-unsplash.jpg": "/network-plus-plus/static/media/ash-edmonds-XZ0xN0hmpi4-unsplash.ba605b141a1bcf1fcc08.jpg",
     "index.html": "/network-plus-plus/index.html",
-    "main.be8cda20.css.map": "/network-plus-plus/static/css/main.be8cda20.css.map",
-    "main.ec62479e.js.map": "/network-plus-plus/static/js/main.ec62479e.js.map"
+    "main.ad19616d.css.map": "/network-plus-plus/static/css/main.ad19616d.css.map",
+    "main.00518861.js.map": "/network-plus-plus/static/js/main.00518861.js.map"
   },
   "entrypoints": [
-    "static/css/main.be8cda20.css",
-    "static/js/main.ec62479e.js"
+    "static/css/main.ad19616d.css",
+    "static/js/main.00518861.js"
   ]
 }
