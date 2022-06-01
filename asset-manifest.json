@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/network-plus-plus/static/css/main.ad19616d.css",
-    "main.js": "/network-plus-plus/static/js/main.00518861.js",
-    "static/media/ash-edmonds-XZ0xN0hmpi4-unsplash.jpg": "/network-plus-plus/static/media/ash-edmonds-XZ0xN0hmpi4-unsplash.ba605b141a1bcf1fcc08.jpg",
+    "main.css": "/network-plus-plus/static/css/main.65b14bc6.css",
+    "main.js": "/network-plus-plus/static/js/main.29d9810b.js",
+    "static/media/engin-akyurt-Hlkuojv_P6I-unsplash.jpg": "/network-plus-plus/static/media/engin-akyurt-Hlkuojv_P6I-unsplash.896e53861e95605b0973.jpg",
     "index.html": "/network-plus-plus/index.html",
-    "main.ad19616d.css.map": "/network-plus-plus/static/css/main.ad19616d.css.map",
-    "main.00518861.js.map": "/network-plus-plus/static/js/main.00518861.js.map"
+    "main.65b14bc6.css.map": "/network-plus-plus/static/css/main.65b14bc6.css.map",
+    "main.29d9810b.js.map": "/network-plus-plus/static/js/main.29d9810b.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad19616d.css",
-    "static/js/main.00518861.js"
+    "static/css/main.65b14bc6.css",
+    "static/js/main.29d9810b.js"
   ]
 }
