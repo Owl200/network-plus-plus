@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/network-plus-plus/static/css/main.29aa1b91.css",
+    "main.css": "/network-plus-plus/static/css/main.bf94e67d.css",
     "main.js": "/network-plus-plus/static/js/main.5273ca82.js",
     "static/media/engin-akyurt-Hlkuojv_P6I-unsplash.jpg": "/network-plus-plus/static/media/engin-akyurt-Hlkuojv_P6I-unsplash.896e53861e95605b0973.jpg",
     "static/media/network.png": "/network-plus-plus/static/media/network.6fd5494b933e1762b64e.png",
     "index.html": "/network-plus-plus/index.html",
-    "main.29aa1b91.css.map": "/network-plus-plus/static/css/main.29aa1b91.css.map",
+    "main.bf94e67d.css.map": "/network-plus-plus/static/css/main.bf94e67d.css.map",
     "main.5273ca82.js.map": "/network-plus-plus/static/js/main.5273ca82.js.map"
   },
   "entrypoints": [
-    "static/css/main.29aa1b91.css",
+    "static/css/main.bf94e67d.css",
     "static/js/main.5273ca82.js"
   ]
 }
